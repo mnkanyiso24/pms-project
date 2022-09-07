@@ -1,0 +1,15 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 15px;
+  }
+  h2{
+    color: rgb(6, 5, 90);
+  }
+  .mat-toolbar{
+    background: #1d04aa;
+    color:white;
+  }
+  

@@ -1,0 +1,42 @@
+input {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(36, 7, 141);
+    border-radius: 4px;
+  }
+  h2{
+    color: rgb(6, 5, 90);
+  }
+  
+  button{
+    background-color: #1d04aa;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .mat-toolbar{
+    background: #1d04aa;
+    color:white;
+  }
+  select{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(36, 7, 141);
+    border-radius: 4px;
+  }
+  
+  label{
+    color:black;
+    font-weight: 500;
+  
+      padding: 8px;
+    }
+  
+  

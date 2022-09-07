@@ -1,0 +1,73 @@
+
+    
+
+<mat-toolbar ><h2 class="text-dark text-muted">
+    <span style="margin-left: 60%; font-size:xx-large; font-family: 'Times New Roman', Times, serif;font-weight: bold;
+  color: antiquewhite;">
+  ADD NEW TASK
+  </span>
+  </h2>
+  </mat-toolbar>
+  <mat-card class="example-card" >
+      
+  <div class="container-fluid" >
+    <div class="row mt-5">
+      <div class="col"></div>
+      <div class="col-4">
+        <div class="card shadow">
+          <div class="card-body">
+  
+  
+            <form [formGroup]="addForm" novalidate class="form">
+
+             
+  
+                <div class="input-fields" class="mb-3">
+                  <label for="visually-hidden" class="form-label">	Select Project name  </label>&nbsp;<br>
+                  <input type="text" name="projectName" formControlName="projectName"   class="input-field" />
+                </div>
+  
+  
+                <div class="input-fields" class="mb-3">
+                  <label for="visually-hidden" class="form-label">	Task ID    </label>&nbsp;<br>
+                  <input type="number" name="taskId" formControlName="taskId"  class="input-field" />
+                </div>
+  
+  
+                <div class="input-fields" class="mb-3">
+                  <label for="visually-hidden" class="form-label">	Tasks name  </label>&nbsp;<br>
+                  <input type="text" name="taskName" formControlName="taskName"  class="input-field" />
+                </div>
+  
+                <div class="input-fields" class="mb-3">
+                  <label for="visually-hidden" class="form-label">	Tasks description </label>&nbsp;<br>
+                  <input type="text" name="taskDescription" formControlName="taskDescription"   class="input-field" />
+                </div>
+
+                <div class="input-fields" class="mb-3">
+                    <label for="visually-hidden" class="form-label">Tasks Due date</label>&nbsp;<br>
+                    <input type="text" name="taskDueDate"  formControlName="taskDueDate"   class="input-field" />
+                  </div>
+
+                  <div class="input-fields" class="mb-3">
+                    <label for="visually-hidden" class="form-label">Who will done task</label>&nbsp;<br>
+                    <input type="text" name="whoDoTask" formControlName="whoDoTask"  class="input-field" />
+                  </div>
+                <br>
+
+                <button class="btn btn-success" (click)="onSubmit()">ADD TASK</button>
+              
+            </form>
+  
+  
+  
+          </div>
+        </div>
+      </div>
+      <div class="col"></div>
+    </div>
+  
+  </div>
+</mat-card>
+  
+

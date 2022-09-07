@@ -1,0 +1,96 @@
+
+<mat-toolbar><h2 class="text-dark text-muted">
+  <span  style="margin-left: 100%; font-size:xx-large; font-family: 'Times New Roman', Times, serif;font-weight: bold;
+color: rgb(217, 215, 250);">
+PREFORMANCE MANAGEMENT SYSTEM
+</span>
+</h2>
+</mat-toolbar>
+
+<div class="container-fluid">
+  <div class="row mt-5">
+    <div class="col"></div>
+    <div class="col-4">
+      <div class="card shadow">
+        <div class="card-body">
+
+
+          <form [formGroup]="addForm" novalidate class="form">
+
+            
+
+              <div class="form-group">
+                <label for="visually-hidden" class="form-label">  First name  </label>&nbsp;<br>
+                <input type="text" formControlName="fName" name="fName"  placeholder="Enter first name"  class="form-control" />
+              </div>
+
+              <div class="form-group">
+                <label for="visually-hidden" class="form-label">  Last name  </label>&nbsp;<br>
+                <input type="text" formControlName="lName" name="lName"  placeholder="Enter last name"  class="form-control" />
+              </div>
+
+              <div  class="mb-3">
+                <label for="visually-hidden" class="form-label">Gender</label>&nbsp;<br>
+              <select type="text"  name="gender"  formControgender="gender"   class="form-control" >
+                <option [disabled]="">choose Gender</option>
+                 <option >Male</option>
+                 <option >Female</option>
+               </select>
+           </div>
+
+           <div class="form-group">
+            <label for="visually-hidden" class="form-label">  Address  </label>&nbsp;<br>
+            <input type="address" formControlName="address" name="address"  placeholder="Enter Address"  class="form-control" />
+          </div>
+               
+
+
+              <div class="form-group">
+                <label for="visually-hidden" class="form-label">  Email  </label>&nbsp;<br>
+                <input type="text" formControlName="email" name="email"  placeholder="Enter email"  class="form-control" />
+
+              </div>
+              <div class="form-group">
+                <label for="visually-hidden" class="form-label">  Password  </label>&nbsp;<br>
+                <input type="password" formControlName="pass" name="pass"  placeholder="Enter password"  class="form-control" />
+              </div><br>
+
+              <div class="form-group">
+                <label for="visually-hidden" class="form-label">  Confirm Password  </label>&nbsp;<br>
+                <input type="password" formControlName="cpass" name="cpass"  placeholder="Confirm password"  class="form-control" />
+              </div><br>
+
+              <div class="form-group">
+                <label for="visually-hidden" class="form-label">  Phone number  </label>&nbsp;<br>
+                <input type="text" formControlName="phones" name="phones"  placeholder="Enter phone number"  class="form-control" />
+              </div>
+
+              <div class="form-group">
+                <label for="visually-hidden" class="form-label">  ID number  </label>&nbsp;<br>
+                <input type="text" formControlName="idNo" name="idNo"  placeholder="Enter id number"  class="form-control" />
+              </div>
+              <div  class="mb-3">
+                <label for="visually-hidden" class="form-label">Position</label>&nbsp;<br>
+              <select  type="text" class="form-select" name="role"   >
+                <option [disabled]="">choose role</option>
+                 <option >Administrator</option>
+                 <option >Senior manager</option>
+                 <option >Middle manager</option>
+               </select>
+           </div>
+               
+              
+              <div></div>
+              <button class="btn btn-success" (click)="onSubmit()">Register</button>
+            
+          </form>
+
+
+
+        </div>
+      </div>
+    </div>
+    <div class="col"></div>
+  </div>
+
+</div>

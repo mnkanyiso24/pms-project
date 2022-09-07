@@ -1,0 +1,84 @@
+<mat-toolbar><h2 class="text-dark text-muted"><span style="margin-left: 60%; font-size:xx-large; font-family: 'Times New Roman', Times, serif;font-weight: bold;
+    color: antiquewhite;">PERFORMANCE MANAGEMENT(SDBIP)</span></h2></mat-toolbar>
+  
+  
+  <table style="width:100%">
+    <thead>
+      <tr>
+        <th colspan="5">QUARTERY TARGET </th>
+  
+      </tr>
+    </thead>
+    <tr>
+      <th>ID</th>
+      <th>Q1</th>
+      
+      <th>Q2</th>
+     
+      <th>Q3</th>
+     
+      <th>Q4</th>
+     
+      <th>Project Name</th>
+      <th> Objectives</th>
+      <th>Project Goal</th>
+      <th> SDBIP REF NO</th>
+      <th>Project ID </th>
+  
+      <th>Institution</th>
+  
+      <th> Annual target</th>
+      <th>Due date</th>
+      <th> Strategy</th>
+      <th>Department </th>
+  
+      <th>Annual Budget </th>
+      <th>
+       Edit
+      </th>
+  
+      <th>
+        Delete
+       </th>
+    </tr>
+    <tr *ngFor="let pjt of project">
+      <td>{{pjt.sId}}</td>
+      <td>{{pjt.Q1}}</td>
+   
+      <td>{{pjt.Q2}}</td>
+     
+      <td>{{pjt.Q3}}</td>
+     
+      <td>{{pjt.Q4}}</td>
+    
+  
+      <td>{{pjt.projectName}}</td>
+      <td>{{pjt.objectives}}</td>
+      <td>{{pjt.goal}}</td>
+      <td>{{pjt.sdbipNo }}</td>
+      <td>{{pjt.ProjectId }}</td>
+      <td>{{pjt.institution}}</td>
+      <td>{{pjt.Annualtarget}}</td>
+      <td>{{pjt.Duedate}}</td>
+      <td>{{pjt.Strategy }}</td>
+      <td>{{pjt.Department }}</td>
+      <td>{{pjt .budget}}</td>
+      <td>
+        <div 
+            class="btn btn-danger"(click)="edit(pjt)">Edit
+          </div>
+         </td>
+
+         <td>
+          <div 
+            class="btn btn-danger"(click)="delete(pjt)">Delete
+          </div>
+           </td>
+  
+    </tr>
+  
+  </table>
+  
+  
+  
+  
